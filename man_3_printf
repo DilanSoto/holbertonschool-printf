@@ -1,0 +1,57 @@
+             Custom Library Functions Manual              
+
+NAME
+         _printf - Custom printf function for formatted output
+
+SYNOPSIS
+       #include "main.h"
+
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       The _printf function produces output according to a format. It writes
+       output to stdout, the standard output stream.
+
+       This function is a custom implementation of printf with an extended set
+       of specifiers. It supports various formatting options for printing
+       characters, strings, integers, numbers in different bases, and more.
+
+       Supported specifiers:
+       c - Prints a character.
+       s - Prints a string.
+       % - Prints a percent sign.
+       d - Prints a signed decimal integer.
+       i - Prints an integer in base 10.
+       r - Prints a string in reverse.
+       R - Encodes and prints a string using ROT13.
+       u - Prints an unsigned integer.
+       o - Prints a number in octal format.
+       b - Prints a number in binary format.
+       X - Prints a number in uppercase hexadecimal format.
+       x - Prints a number in lowercase hexadecimal format.
+
+RETURN VALUE
+       On success, the total number of characters written is returned. On
+       failure, a negative number is returned.
+
+EXAMPLES
+       _printf("Character: %c\n", 'A');
+       _printf("String: %s\n", "Hello, World");
+       _printf("Percent: %%\n");
+       _printf("Integer: %d\n", 100);
+       _printf("Integer: %i\n", 100);
+       _printf("Reverse: %r\n", "Hello");
+       _printf("ROT13: %R\n", "Hello");
+       _printf("Unsigned: %u\n", 12345);
+       _printf("Octal: %o\n", 12345);
+       _printf("Binary: %b\n", 5);
+       _printf("Hexadecimal (uppercase): %X\n", 255);
+       _printf("Hexadecimal (lowercase): %x\n", 255);
+
+SEE ALSO
+       printf
+
+AUTHOR
+       [Dilan Soto & Javier Marrero]
+
+Custom Project                     [November 26, 2023]                         

@@ -65,10 +65,11 @@ int _print_percent(va_list args)
  *
  * Return: Chars and digits printed in to stdout.
  */
-int _print_num(va_list args, int uppercase);
+int _print_int(va_list args)
 {
-	return _print_num(args, 10, 0);
+    return _print_num(args, 0); 
 }
+
 
 /**
  * _print_nint - Prints the integer of a decimal.
@@ -88,7 +89,7 @@ int _print_nint(va_list args)
  * @uppercase: flag for uppercase printing
  * Return: count of printed characters
  */
-int _print_num(va_list args, int base, int uppercase)
+int _print_num(va_list args, int uppercase)
 {
 	int digits[10], j, m, num, sum, count = 0;
 	num = va_arg(args, int);

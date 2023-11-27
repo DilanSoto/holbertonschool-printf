@@ -21,7 +21,7 @@ int _putchar(char c)
 }
 
 /**
- * print_char - prints a character to stdout
+ * _print_char - prints a character to stdout
  * @ap: the arguments pointer
  *
  * Return: the number of characters printed (always 1).
@@ -35,7 +35,7 @@ int _print_char(va_list ap)
 }
 
 /**
- * print_string - prints a string to stdout
+ * _print_string - prints a string to stdout
  * @ap: the argument pointer
  *
  * Return: the number of characters printed

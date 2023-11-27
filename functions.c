@@ -65,7 +65,7 @@ int _print_percent(va_list args)
  *
  * Return: Chars and digits printed in to stdout.
  */
-int _print_int(va_list args)
+int _print_num(va_list args, int uppercase)
 {
     return _print_num(args, 0); 
 }

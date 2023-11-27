@@ -1,57 +1,46 @@
-             Custom Library Functions Manual              
+.TH _PRINTF  "2023-11-26" "_PrintF MAN PAGE"
+.SH NAME
+_printf - Custom print function
 
-NAME
-         _printf - Custom printf function for formatted output
+.SH SYNOPSIS
+.B #include <stdio.h>
+.br
+.B #include <stdarg.h>
+.br
+.B int _printf(const char *format, ...);
 
-SYNOPSIS
-       #include "main.h"
+.SH DESCRIPTION
+The
+.B _printf
+function is a simplified version of the
+.B _printf
+function in the C programming language. It takes a format string and a variable list of arguments, and prints the formatted output to the standard output.
 
-       int _printf(const char *format, ...);
+.PP
+The format string can contain format specifiers, such as
+.B %d
+for integers,
+.B %f
+for floating-point numbers, and
+.B %s
+for strings.
 
-DESCRIPTION
-       The _printf function produces output according to a format. It writes
-       output to stdout, the standard output stream.
+.SH RETURN VALUE
+The
+.B _printf
+function returns the number of characters printed (excluding the null-terminating character), or a negative value if an error occurs.
 
-       This function is a custom implementation of printf with an extended set
-       of specifiers. It supports various formatting options for printing
-       characters, strings, integers, numbers in different bases, and more.
+.SH EXAMPLES
+The following example shows how to use the
+.B _printf
+function to print an integer and a string:
 
-       Supported specifiers:
-       c - Prints a character.
-       s - Prints a string.
-       % - Prints a percent sign.
-       d - Prints a signed decimal integer.
-       i - Prints an integer in base 10.
-       r - Prints a string in reverse.
-       R - Encodes and prints a string using ROT13.
-       u - Prints an unsigned integer.
-       o - Prints a number in octal format.
-       b - Prints a number in binary format.
-       X - Prints a number in uppercase hexadecimal format.
-       x - Prints a number in lowercase hexadecimal format.
-
-RETURN VALUE
-       On success, the total number of characters written is returned. On
-       failure, a negative number is returned.
-
-EXAMPLES
        _printf("Character: %c\n", 'A');
+        This example prints "A"
+
        _printf("String: %s\n", "Hello, World");
-       _printf("Percent: %%\n");
-       _printf("Integer: %d\n", 100);
-       _printf("Integer: %i\n", 100);
-       _printf("Reverse: %r\n", "Hello");
-       _printf("ROT13: %R\n", "Hello");
-       _printf("Unsigned: %u\n", 12345);
-       _printf("Octal: %o\n", 12345);
-       _printf("Binary: %b\n", 5);
-       _printf("Hexadecimal (uppercase): %X\n", 255);
-       _printf("Hexadecimal (lowercase): %x\n", 255);
+        This example prints "Hello, World"
 
-SEE ALSO
-       printf
 
-AUTHOR
-       [Dilan Soto & Javier Marrero]
-
-Custom Project                     [November 26, 2023]                         
+.SH AUTHOR
+This manual was written by [Dilan Soto & Javier Marrero]

@@ -1,5 +1,6 @@
 #include "main.h"
-#include <string.h> /**
+#include <string.h>
+/**
 * _write_char - writes the character c to stdout
 * @c: the character to print
 *

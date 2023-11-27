@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _print_i - Prints an integer.
+ * _print_int - Prints an integer.
  * @i: The integer to print.
  * @ap: A variable argument list that contains the integer to be printed.
  * Return: Chars and digits printed in to stdout.
@@ -46,7 +46,7 @@ int _print_int(va_list ap)
 }
 
 /**
- * _print_d - Prints the integer of a decimal.
+ * _print_nint - Prints the integer of a decimal.
  * @d: Decimal to print.
  * @ap: A variable argument list that contains the integer to be printed.
  * Return: Chars and digits printed in to the stdout.
